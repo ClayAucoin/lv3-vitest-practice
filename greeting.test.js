@@ -2,7 +2,9 @@ import { describe, it, expect } from 'vitest';
 import { makeGreeting, addSignature, toProperCase } from './greeting.js';
 
 // makeGreeting function
-describe("makeGreeting funtion", () => {
+//    we want:
+//    makeGreeting(name, occasion) → string
+describe("makeGreeting function", () => {
   it("should output name + occasion", () => {
     const result = makeGreeting("Alex", "Happy Birthday")
     expect(result).toBe("Happy Birthday, Alex!")
@@ -35,6 +37,8 @@ describe("makeGreeting funtion", () => {
 })
 
 // addSignature function
+//    we want:
+//    addSignature(message, from) → string
 describe("addSignature funtion", () => {
   it("should output occasion + from", () => {
     const result = addSignature("Happy New Year, Bob!", "Billy")
@@ -68,6 +72,8 @@ describe("addSignature funtion", () => {
 })
 
 // toProperCase function
+//    we want:
+//    toProperCase(str) → string
 describe("toProperCase function", () => {
   it("should format text with proper case", () => {
     const result = toProperCase("Proper Case")
